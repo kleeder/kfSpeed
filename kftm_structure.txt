@@ -1,0 +1,52 @@
+6B 66 74 6D 01 00			KFTM Header
+00 00 00 00 00 00 00 00 00	Title
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00
+00 00 00 00 00 00 00 00 00	Composer
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00
+00 00 00 00 00 00 00 00 00	Description
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00
+00
+01 00						Total amount of rows (01 00 = 1 row; FF FF  = 65535 rows
+
+and then for every row:
+
+01 00						command: 01 = speed; 02 = jump
+00 00 00 00 00 40 8F 40		command value float
+2D 43 1C EB E2 36 1A 3F		volume column 1
+00 00 00 00 00 00 08 40		frequency col 1
+00 00 00 00 00 00 F0 BF		volume column 2
+00 00 00 00 00 00 00 00		frequency col 2
+00 00 00 00 00 00 00 00		volume column 3
+00 00 00 00 00 00 00 00		frequency col 3
+00 00 00 00 00 00 00 00		volume column 4
+00 00 00 00 00 00 00 00		frequency col 4
+00 00 00 00 00 00 00 00		volume column 5
+00 00 00 00 00 00 00 00		frequency col 5
+00 00 00 00 00 00 00 00		volume column 6
+00 00 00 00 00 00 00 00		frequency col 6
+00 00 00 00 00 00 00 00		volume column 7
+00 00 00 00 00 00 00 00		frequency col 7
+00 00 00 00 00 00 00 00		volume column 8
+00 00 00 00 00 00 00 00		frequency col 8
+
+rows can be completely non-existing when you load the file for the first time.
+as long as the total amount is set to something, the tracker will fill it up
+with empty rows.
+
