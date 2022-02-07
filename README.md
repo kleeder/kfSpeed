@@ -1,12 +1,13 @@
 # kfSpeed
 
-
-This is a very simple tool to convert raw pcm data into [klangfreude](https://kleeder.de/files/botb/klangfreude/klangfreude_20210508.zip).
+Very simple tool to convert raw pcm data into [klangfreude](https://kleeder.de/files/botb/klangfreude/klangfreude_20210508.zip).
 It works by DC-offsetting silence.
 Adjusting and setting up your .KFTM is needed for this to work, unless you wanna generate one from scratch.
 Since klangfreude behaves differently depending on where you wanna start the PCM,
 brute-forcing the correct values is needed. I cannot help you with this.
+
 -------
+
 ## Setup
 
 Make sure you have the following files in your directory:
